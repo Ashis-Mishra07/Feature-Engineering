@@ -1,0 +1,53 @@
+Types of Parameters 
+1. Model Parameters
+2. Hyper Parameters
+
+Model parameters 
+are the parameters of the model that can be determined by training with
+training dataset . These can be considered as internal parameter. These parameters 
+are determined from the execution of the model parameters . 
+ex. weights , bias 
+Y = w*X + b
+
+
+
+Hyperparameters
+are the parameters whose values control the learning process .These are adjustable paramters 
+used to obtain an optimal model . These are external parameters .These are not determined
+rather these are used in the learning process .
+ex. learning rate , Number of Epochs , n_estimators 
+
+ 
+
+Model + Hyperparameter tuning -> Best Hyperparameters
+Model + Model Training -> Best Model Parameters
+
+
+Hyperparameter tuning
+This refers to the process of choosing the optimium set of Hyperparameters
+for a Machine Learning Model . This process is also called Hyperparamter Optimization.
+
+This is of two types -> GridSearchCV , RandomisedCV
+
+GridSearchCV
+This is an exhaustive search over specified parameter values for an estimator. 
+It is a cross-validation method to find the optimal hyperparameters by trying all
+possible combinations of the provided hyperparameter values.
+
+RandomizedSearchCV
+This method samples a fixed number of hyperparameter settings from the specified 
+hyperparameter space. It is a more efficient approach compared to GridSearchCV when 
+the hyperparameter space is large, as it does not try all possible combinations but 
+rather a random subset of them.
+
+
+Hyperparameters Machine supports Vector Classifiers
+C:[1,5,10]
+kernel:['linear' , 'poly' , 'rbf' , 'sigmoid']
+
+C values are for misclassification , if large then we are allowing many misclassifications
+
+
+
+
+
